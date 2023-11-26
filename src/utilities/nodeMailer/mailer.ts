@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer';
-import { prisma } from '../prisma/db';
+//import { prisma } from '../prisma/db';
 
 enum locations {
   access,
