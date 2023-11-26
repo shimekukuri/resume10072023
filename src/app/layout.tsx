@@ -1,24 +1,28 @@
-import Clock from '@/components/clock/Clock';
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { Orbitron } from 'next/font/google';
-import { Fredoka } from 'next/font/google';
-import DateDisplay from '@/components/date/DateDisplay';
+import Clock from "@/components/clock/Clock";
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { Orbitron } from "next/font/google";
+import { Fredoka } from "next/font/google";
+import DateDisplay from "@/components/date/DateDisplay";
+import Link from "next/link";
+import FadeIn from "@/components/fadeIn/FadeIn";
 
-const inter = Inter({ subsets: ['latin'] });
-const orbitron = Orbitron({ subsets: ['latin'] });
-const fredoka = Fredoka({ subsets: ['latin'], weight: '500' });
+const inter = Inter({ subsets: ["latin"] });
+const orbitron = Orbitron({ subsets: ["latin"] });
+const fredoka = Fredoka({ subsets: ["latin"], weight: "500" });
 
 export const metadata: Metadata = {
-  title: 'James Hutchinson',
-  description: 'Software Developer',
+  title: "James Hutchinson",
+  description: "Software Developer",
 };
 
 export default function RootLayout({
   children,
+  modal,
 }: {
   children: React.ReactNode;
+  modal: React.ReactNode;
 }) {
   return (
     <html
@@ -29,24 +33,27 @@ export default function RootLayout({
       <body
         className={`${inter.className} flex flex-col items-center justify-between min-h-screen max-h-screen overflow-y-clip max-w-[100vw] overflow-x-clip bg-slate-300`}
       >
+      <FadeIn />
+      {modal}
         <div className="flex-1 min-w-full flex overflow-x-scroll lg:pt-16 pb-4 snap-mandatory">
           {children}
         </div>
-        <div className="bottom-0 left-0 right-0 w-full h-24 md:h-32 lg:h-52 relative">
+        <div className="bottom-0 left-0 right-0 w-full h-24 md:h-32 lg:h-52 relative ">
           <Clock
             className={`absolute top-0 right-0 left-0 z-10 text-center ${orbitron.className} text-3xl lg:text-6xl`}
           ></Clock>
           <DateDisplay
-            className={`absolute bottom-0 top-0 left-0 right-0 z-10 text-center text-4xl ${orbitron.className} text-black flex justify-center items-center lg:pt-8`}
+            className={`absolute bottom-0 top-0 left-0 right-0 z-10 text-center text-2xl md:text-4xl ${orbitron.className} text-black flex justify-center items-center lg:pt-8`}
           />
 
           <div className="absolute lg:top-0 bottom-0 left-0 z-10 flex items-center font-black">
             <div className="rounded-r-full w-24 md:w-64 h-24 md:h-32 flex items-center justify-end p-2 shadow-2xl border-2 border-[#9e9e9e9a]">
-              <div
+              <Link
+              href={'/'}
                 className={`rounded-full w-full h-22 md:w-auto md:h-28 aspect-square border-2 border-[#34BEED] flex justify-center items-center shadow-2xl text-black ${fredoka.className} text-3xl md:text-4xl hover:bg-red-400`}
               >
                 Mii
-              </div>
+              </Link>
             </div>
           </div>
           <div className="absolute top-0 bottom-0 right-0 z-10 flex items-center font-black">
@@ -78,7 +85,7 @@ export default function RootLayout({
             xmlns="http://www.w3.org/2000/svg"
             viewBox="-0.1 -0.1 20.2 3.2"
             className="scale-110 hidden lg:block"
-            style={{ filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));' }}
+            style={{ filter: "drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))" }}
           >
             {/* scale-125 z-0 top-0 bottom-0 absolute */}
             <filter id="inset-shadow">
@@ -111,6 +118,7 @@ export default function RootLayout({
             </g>
           </svg>
         </div>
+      <Link href={'/blog'} className="hidden"></Link>
       </body>
     </html>
   );

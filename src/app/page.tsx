@@ -1,5 +1,5 @@
-import Channel from '@/components/channel/Channel';
-import Hero from '@/components/hero/Hero';
+import Channel from "@/components/channel/Channel";
+import Hero from "@/components/hero/Hero";
 
 export default function Page() {
   return (
@@ -7,52 +7,52 @@ export default function Page() {
       <div className="min-w-[10vw] min-h-[100%] hidden md:block"></div>
       <div className="p-4 lg:p-0 min-w-[100vw] lg:min-w-[80vw] grid grid-cols-3 lg:grid-cols-4 grid-rows-4 lg:grid-rows-3 content-center gap-2 snap-center">
         <Hero />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel className={`shadow-none`} />
-        <Channel className={`shadow-none`} />
-        <Channel className={`shadow-none`} />
-        <Channel className={`shadow-none`} />
-        <Channel className={`shadow-none`} />
+        <Channel href="/blogchannel" />
+        <Channel href="/test" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" className={`shadow-none`} />
+        <Channel href="/" className={`shadow-none`} />
+        <Channel href="/" className={`shadow-none`} />
+        <Channel href="/" className={`shadow-none`} />
+        <Channel href="/" className={`shadow-none`} />
       </div>
 
       <div className="p-4 lg:p-0 min-w-[100vw] lg:min-w-[80vw] grid grid-cols-3 lg:grid-cols-4 grid-rows-4 lg:grid-rows-3 content-center gap-2 snap-center">
         <Hero />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
       </div>
       <div className="p-4 lg:p-0 min-w-[100vw] lg:min-w-[80vw] grid grid-cols-3 lg:grid-cols-4 grid-rows-4 lg:grid-rows-3 content-center gap-2 snap-center">
         <Hero />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
       </div>
       <div className="p-4 lg:p-0 min-w-[100vw] lg:min-w-[80vw] grid grid-cols-3 lg:grid-cols-4 grid-rows-4 lg:grid-rows-3 content-center gap-2 snap-center">
         <Hero />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
-        <Channel />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
+        <Channel href="/" />
       </div>
       <div className="min-w-[10vw] min-h-[100%]"></div>
     </main>

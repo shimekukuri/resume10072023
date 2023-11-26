@@ -1,21 +1,28 @@
-import { ReactNode } from 'react';
+import Link from "next/link";
+import { ReactNode } from "react";
 
 export default function Channel({
   children,
   className,
+  href,
 }: {
   children?: ReactNode;
   className?: String;
+  href: string;
 }) {
+  console.log(href);
   return (
-    <div className="flex h-full w-full justify-center items-center">
+    <Link
+      href={href}
+      className="flex h-full w-full justify-center items-center"
+    >
       <div
         className={`rounded-3xl bg-green-500 aspect-square md:aspect-auto md:h-full w-full shadow-lg ${
-          className ? className : ''
+          className ? className : ""
         }`}
       >
         {children}
       </div>
-    </div>
+    </Link>
   );
 }
