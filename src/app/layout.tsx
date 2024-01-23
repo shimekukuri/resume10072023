@@ -35,7 +35,7 @@ export default function RootLayout({
         <div className="flex-1 min-w-full flex overflow-x-scroll lg:pt-16 pb-4 snap-mandatory">
           {children}
         </div>
-        <div className="bottom-0 left-0 right-0 w-full h-24 md:h-32 lg:h-52 relative ">
+        <div className="bottom-14 md:bottom-0 left-0 right-0 w-full h-24 md:h-32 lg:h-52 relative ">
           <Clock
             className={`absolute top-0 right-0 left-0 z-10 text-center ${orbitron.className} text-3xl lg:text-6xl`}
           ></Clock>
