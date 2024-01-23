@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ReactNode } from "react";
 
 export default function Channel({
@@ -12,7 +11,7 @@ export default function Channel({
 }) {
   console.log(href);
   return (
-    <Link
+    <a
       href={href}
       className="flex h-full w-full justify-center items-center"
     >
@@ -23,6 +22,6 @@ export default function Channel({
       >
         {children}
       </div>
-    </Link>
+    </a>
   );
 }

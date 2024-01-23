@@ -1,4 +1,5 @@
 import Channel from "@/components/channel/Channel";
+import ChannelModalDialog from "@/components/channelmodal/ChannelModalDialog";
 import Hero from "@/components/hero/Hero";
 
 export default function Page() {
@@ -7,7 +8,7 @@ export default function Page() {
       <div className="min-w-[10vw] min-h-[100%] hidden md:block"></div>
       <div className="p-4 lg:p-0 min-w-[100vw] lg:min-w-[80vw] grid grid-cols-3 lg:grid-cols-4 grid-rows-4 lg:grid-rows-3 content-center gap-2 snap-center">
         <Hero />
-        <Channel href="/blogchannel" />
+        <Channel href="#my_modal_1" />
         <Channel href="/test" />
         <Channel href="/" />
         <Channel href="/" />
@@ -55,6 +56,7 @@ export default function Page() {
         <Channel href="/" />
       </div>
       <div className="min-w-[10vw] min-h-[100%]"></div>
+      <ChannelModalDialog href="./blog">f</ChannelModalDialog>
     </main>
   );
 }
