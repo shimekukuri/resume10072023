@@ -19,7 +19,6 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  modal,
 }: {
   children: React.ReactNode;
   modal: React.ReactNode;
@@ -34,7 +33,6 @@ export default function RootLayout({
         className={`${inter.className} flex flex-col items-center justify-between min-h-screen max-h-screen overflow-y-clip max-w-[100vw] overflow-x-clip bg-slate-300`}
       >
       <FadeIn />
-      {modal}
         <div className="flex-1 min-w-full flex overflow-x-scroll lg:pt-16 pb-4 snap-mandatory">
           {children}
         </div>
