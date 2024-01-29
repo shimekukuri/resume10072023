@@ -25,11 +25,11 @@ export default function ChannelModalDialog({
   return (
     <dialog id="my_modal_1" ref={modalRef} className="modal h-[100dvh] w-screen">
       <div
-        className={`bg-black h-[100vh] min-h-screen w-screen z-50 ${
+        className={`bg-black h-[100dvh] w-screen z-50 ${
           fadeOut ? "block animate-black-fade-out" : "hidden"
         }`}
       ></div>
-      <div className="absolute h-screen w-screen flex justify-center items-center z-40">
+      <div className="absolute h-[100dvh] w-screen flex justify-center items-center z-40">
         <div className="flex-1 h-full bg-[#ffffff] animate-channel-scale opacity-0 flex flex-col">
           <div className="flex-1">{children}</div>
           <div className="h-24 lg:h-44 bg-[#d6d4d4] w-full flex items-center justify-center">
