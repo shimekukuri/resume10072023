@@ -23,7 +23,7 @@ export default function ChannelModalDialog({
   };
 
   return (
-    <dialog id="my_modal_1" ref={modalRef} className="modal h-screen w-screen">
+    <dialog id="my_modal_1" ref={modalRef} className="modal h-[100dvh] w-screen">
       <div
         className={`bg-black h-[100vh] min-h-screen w-screen z-50 ${
           fadeOut ? "block animate-black-fade-out" : "hidden"
@@ -54,15 +54,6 @@ export default function ChannelModalDialog({
           </div>
         </div>
       </div>
-      {/*<div className="h-screen w-screen">
-        {children}
-        <div onClick={(() => router.replace('./blog'))}>test</div>
-        <div className="modal-action">
-          <form method="dialog">
-            <button className="btn">Close</button>
-          </form>
-        </div>
-      </div>*/}
     </dialog>
   );
 }
