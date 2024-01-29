@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} flex flex-col items-center justify-between min-h-screen max-h-screen overflow-y-clip max-w-[100vw] overflow-x-clip bg-slate-300`}
       >
-      <FadeIn />
+        <FadeIn />
         <div className="flex-1 min-w-full flex overflow-x-scroll lg:pt-16 pb-4 snap-mandatory">
           {children}
         </div>
@@ -46,7 +46,7 @@ export default function RootLayout({
           <div className="absolute lg:top-0 bottom-0 left-0 z-10 flex items-center font-black">
             <div className="rounded-r-full w-24 md:w-64 h-24 md:h-32 flex items-center justify-end p-2 shadow-2xl border-2 border-[#9e9e9e9a]">
               <Link
-              href={'/'}
+                href={"/"}
                 className={`rounded-full w-full h-22 md:w-auto md:h-28 aspect-square border-2 border-[#34BEED] flex justify-center items-center shadow-2xl text-black ${fredoka.className} text-3xl md:text-4xl hover:bg-red-400`}
               >
                 Mii
@@ -55,7 +55,7 @@ export default function RootLayout({
           </div>
           <div className="absolute top-0 bottom-0 right-0 z-10 flex items-center font-black">
             <div className="rounded-l-full w-24 md:w-64 h-24 md:h-32 flex items-center justify-start p-2 shadow-2xl border-2 border-[#9e9e9e9a]">
-              <div className="rounded-full w-full h-22 md:w-auto md:h-28 aspect-square border-2 border-[#34BEED] flex items-center justify-center shadow-2xl text-black p-4">
+              <div className="rounded-full w-full h-22 md:w-auto md:h-28 aspect-square border-2 border-[#34BEED] flex items-center justify-center shadow-2xl text-black">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -115,7 +115,7 @@ export default function RootLayout({
             </g>
           </svg>
         </div>
-      <Link href={'/blog'} className="hidden"></Link>
+        <Link href={"/blog"} className="hidden"></Link>
       </body>
     </html>
   );
