@@ -23,7 +23,7 @@ export default function ChannelModalDialog({
   };
 
   return (
-    <dialog id="my_modal_1" ref={modalRef} className="modal h-[100dvh] w-screen">
+    <dialog id={`${href.slice(1)}-modal`} ref={modalRef} className="modal h-[100dvh] w-screen">
       <div
         className={`bg-black h-[100dvh] w-screen z-50 ${
           fadeOut ? "block animate-black-fade-out" : "hidden"
