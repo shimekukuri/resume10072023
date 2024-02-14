@@ -22,6 +22,73 @@
   overflow-x: hidden;
 }
 
+.channel {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.1509) 100%);
+}
+
+@keyframes transx {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+
+}
+
+@keyframes transxtra {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+
+
+}
+
+@keyframes transy {
+  0% {
+    transform: translateY(-1000%) rotate(90deg);
+  }
+
+  100% {
+    transform: translateY(1500%) rotate(90deg);
+  }
+}
+
+.thoughts-text {
+  animation-name: transxtra;
+  animation-fill-mode: forwards;
+  animation-duration: 15000ms;
+  animation-timing-function: cubic-bezier(1, 1, .75, .47);
+  animation-iteration-count: infinite;
+}
+
+.word-text {
+  animation-name: transy;
+  animation-fill-mode: forwards;
+  animation-duration: 7000ms;
+  animation-timing-function: cubic-bezier(1, 1, .75, .47);
+  animation-iteration-count: infinite;
+  animation-delay: 600ms;
+
+  transform: rotate(-90);
+}
+
+.blog-text {
+  animation-name: transx;
+  animation-fill-mode: forwards;
+  animation-duration: 5000ms;
+  animation-timing-function: cubic-bezier(1, 1, .75, .47);
+  animation-iteration-count: infinite;
+
+}
+
+
 @layer utilities {
   @variants responsive {
 

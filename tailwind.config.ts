@@ -186,7 +186,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('@tailwindcss/container-queries')],
   daisyui: {
     themes: [
       "light",
