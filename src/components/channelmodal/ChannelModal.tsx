@@ -27,7 +27,7 @@ export default function ChannelModal({ children }: { children: ReactNode }) {
       <div className="absolute h-screen w-screen flex justify-center items-center z-40">
         <div className="flex-1 h-full bg-[#ffffff] animate-channel-scale opacity-0 flex flex-col">
           <div className="flex-1">{children}</div>
-          <div className="h-24 lg:h-44 bg-[#d6d4d4] w-full flex items-center justify-center">
+          <div className="h-24 lg:h-44 bg-[d6d4d4] w-full flex items-center justify-center">
             <div className="flex justify-around gap-12">
               <div
                 className="btn bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black
