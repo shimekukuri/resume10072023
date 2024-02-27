@@ -2,6 +2,7 @@ import AboutMe from "@/components/aboutme/AboutMe";
 import Channel from "@/components/channel/Channel";
 import Hero from "@/components/hero/Hero";
 import BlogChannel from "@/components/mainChannels/blogChannel/BlogChannel";
+import Rust from "@/components/rust/Rust";
 
 export default function Page() {
   return (
@@ -11,7 +12,7 @@ export default function Page() {
         <Hero />
         <BlogChannel />
         <AboutMe />
-        <Channel href="/" />
+        <Rust />
         <Channel href="/" />
         <Channel href="/" />
         <Channel href="/" />
