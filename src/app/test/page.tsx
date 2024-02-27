@@ -1,10 +1,12 @@
+import AsyncBlogCardBuilder from "@/components/blog/asyncBlogCardBuilder/AsyncBlogCardBuilder";
+import { Suspense } from "react";
+
 export default function Page() {
-  const foo = [11, 2, 3, 4, 5];
   return (
     <div>
-      {foo.map((x, i) => {
-        return <div key={x + i}>{x}</div>;
-      })}
+      <Suspense>
+        <AsyncBlogCardBuilder />
+      </Suspense>
     </div>
   );
 }

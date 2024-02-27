@@ -15,7 +15,7 @@ export default function Channel({
     <>
       <a href={`#${href.slice(1)}-modal`} className="flex h-full w-full justify-center items-center">
         <div
-          className={`rounded-3xl aspect-square md:aspect-auto md:h-full w-full shadow-lg overflow-clip border-black border ${
+          className={`rounded-3xl aspect-square md:aspect-auto md:h-full w-full shadow-lg overflow-clip ${
             className ? className : ""
           }`}
         >
