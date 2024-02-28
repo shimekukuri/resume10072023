@@ -9,7 +9,7 @@ export default function BlogChannel() {
           Words
         </div>
         <div className="absolute top-0 bottom-0 right-0 left-0 flex justify-center item-center flex-col">
-          <h2 className="text-amber-700 text-9xl blog-text @lg:text-[20rem] ">
+          <h2 className="text-amber-700 blog-text @[4rem]:text-5xl @[15rem]:text-9xl  @sm:text-[20rem] ">
             Blog
           </h2>
         </div>
