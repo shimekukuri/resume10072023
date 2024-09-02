@@ -6,7 +6,6 @@ export default async function AsyncBlogCardBuilder() {
 
   return (
     <div className="flex-1 flex flex-wrap gap-4 justify-center">
-      <div className="w-full text-5xl">Catagories</div>
       {posts.map((x: any, i: number) => {
         return (
           <BlogCard

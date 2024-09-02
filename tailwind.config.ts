@@ -45,6 +45,10 @@ const config: Config = {
           "0%": { transform: "scale(1.0)"},
           "100%": { transform: "scale(1.1)"},
         },
+        blogScale: {
+          "0%": { transform: "scale(1.0)"},
+          "100%": { transform: "scale(1.5)"},
+        },
         channelScale: {
           "0%": { transform: "scale(0.6)" },
           "100%": { transform: "scale(1.0)", opacity: "1"},
@@ -148,6 +152,7 @@ const config: Config = {
         "fade-in-2100": "fadeIn 2100ms ease-in-out forwards",
         "fade-in-2200": "fadeIn 2200ms ease-in-out forwards",
         "scale-200": "scale 200ms ease-in-out forwards",
+        "blog-scale-200": "blogScale 200ms ease-in-out forwards",
         "pulse-400": "pulse 400ms cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "pulse-600": "pulse 600ms cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "pulse-800": "pulse 800ms cubic-bezier(0.4, 0, 0.6, 1) infinite",
