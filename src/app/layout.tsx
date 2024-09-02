@@ -26,13 +26,13 @@ export default function RootLayout({
     <html
       lang="en"
       data-theme=""
-      className="bg-[#ffffff] max-w-[100vw] max-h-screen overflow-clip"
+      className="bg-[#ffffff] max-w-[100vw] max-h-screen overflow-clip scroll-bars-none scroll-bars-none-ie"
     >
       <body
         className={`${inter.className} flex flex-col items-center justify-between min-h-screen max-h-screen overflow-y-clip max-w-[100vw] overflow-x-clip bg-slate-300`}
       >
         <FadeIn />
-        <div className="flex-1 min-w-full flex overflow-x-scroll lg:pt-16 pb-4 snap-mandatory">
+        <div className="flex-1 min-w-full flex overflow-x-scroll lg:pt-16 pb-4 snap-mandatory scroll-bars-none scroll-bars-none-ie">
           {children}
         </div>
         <div className="bottom-24 md:bottom-0 left-0 right-0 w-full h-24 md:h-32 lg:h-52 relative ">
