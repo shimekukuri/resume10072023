@@ -1,5 +1,9 @@
-export default function BlogBubble()  {
-  return (<div className="min-w-48 bg-primary flex-1 hover:flex-[2] hover:bg-secondary rounded-full aspect-square">
-    <div></div>
-  </div>);
+export default function BlogBubble({ className }: { className?: string }) {
+  return (
+    <div
+      className={`min-w-16 aspect-square rounded-full bubble hover:animate-blog-scale-200 hover:z-50 ${className ? className : ""}`}
+    >
+      <div className=""></div>
+    </div>
+  );
 }
